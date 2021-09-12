@@ -1,0 +1,25 @@
+.header {
+	width: 100%;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 2rem 1rem;
+	text-shadow: 1px 1px 5px rgb(158, 158, 158);
+}
+
+.header__title--main {
+	font-size: 3rem;
+	font-weight: 300;
+	letter-spacing: 1.5rem;
+	word-spacing: 1rem;
+	margin: 2rem 0;
+	animation: bounceInLeft 2s;
+	backface-visibility: hidden;
+}
+.header__title--sub {
+	font-size: 2rem;
+	letter-spacing: 0.5rem;
+	word-spacing: 0.5rem;
+	font-weight: 500;
+	animation: bounceInRight 1s;
+	backface-visibility: hidden;
+}

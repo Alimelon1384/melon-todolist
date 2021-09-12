@@ -1,0 +1,148 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+		<link rel="stylesheet" href="src/css/style.css" />
+		<link rel="stylesheet" href="src/css/mediaquery.css">
+		<script src="src/js/controller.js" type="module" defer></script>
+		<title>Todo Application | Online Todo List</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1 class="header__title--main">online todo list</h1>
+			<h2 class="header__title--sub">
+				Your to-do list is always with you
+			</h2>
+		</header>
+
+		<div class="features">
+			<div class="search-container">
+				<form action="" class="search">
+					<div class="search__icon">
+						<img
+							src="https://img.icons8.com/color/48/000000/search--v1.png"
+							alt="search"
+						/>
+					</div>
+					<input
+						type="text"
+						placeholder="Search for item ..."
+						class="search__input"
+					/>
+				</form>
+			</div>
+
+			<div class="feature-btns">
+				<div class="btn--add btn-feature" title="add item">
+					<img
+						src="https://img.icons8.com/dusk/64/000000/add--v1.png"
+						alt="addition"
+					/>
+				</div>
+
+				<div class="btn--sort btn-feature" title="sort the list">
+					<img
+						src="https://img.icons8.com/dusk/64/000000/sorting-answers.png"
+						alt="sort"
+					/>
+				</div>
+
+				<div class="btn--clear btn-feature" title="clear completed item">
+					<img
+						src="https://img.icons8.com/dusk/64/000000/broom.png"
+						alt="clear"
+					/>
+				</div>
+
+				<div class="btn--check-all btn-feature" title="check all the items">
+					<img alt="check all" src="https://img.icons8.com/dusk/64/000000/check-all.png"/>
+				</div>
+			</div>
+		</div>
+
+		<div class="item-container">
+			
+		</div>
+
+		<div class="addition-container hidden">
+			<div class="overlay"></div>
+			<div class="addition">
+				<div class="addition__header">
+					<img class="addition__img" src="https://img.icons8.com/dusk/64/000000/add--v1.png"></img>
+					<div class="addition__title">Add new item</div>
+				</div>
+
+				<form class="addition__form" action="#">
+					<div class="addition__row">
+						<label for="title" class="label">Title:</label>
+						<input required type="text" name="title" class="inp" id="title">
+					</div>
+					<div class="addition__row">
+						<label for="duetime" class="label">Due Time:</label>
+						<!-- <input required type="datetime-local" name="duetime" class="inp" id="duetime"> -->
+						<select required name="weekday" class="inp" id="weekday">
+							<option value="">weekday</option>
+							<option value="sat">sat</option>
+							<option value="sun">sun</option>
+							<option value="mon">mon</option>
+							<option value="tue">tue</option>
+							<option value="wed">wed</option>
+							<option value="thu">thu</option>
+							<option value="fri">fri</option>
+						</select>
+						<input type="time" value="00:00" required name="time" class="inp" id="time">
+					</div>
+					<div class="addition__row">
+						<label for="priority" class="label">Priority:</label>
+						<select required type="text" name="priority" class="inp" id="priority">
+							<option value="0">Low</option>
+							<option value="1" selected>Common</option>
+							<option value="2">High</option>
+							<option value="3">Essential</option>
+							
+						</select>
+					</div>
+					<div class="addition__row">
+						<label for="description" class="label">Description:</label>
+						<textarea type="text" name="description" class="inp" id="description"></textarea>
+					</div>
+
+					<div class="addition__btns">
+						<button class="addition__btn btn-confirm" >Confirm</button>
+						<button class="addition__btn btn-cancel" >Cancel</button>
+					</div>
+				</form>
+		
+			</div>
+		</div>
+
+		<div class="error-container hidden">
+			<div class="overlay"></div>
+			<div class="error">
+				<div class="error__header">
+					<img
+						src="https://img.icons8.com/doodle/48/000000/error.png"
+						class="error__img"
+						alt="error"
+					/>
+					<h1 class="error__title">ERROR RENDER</h1>
+				</div>
+				<p class="error__text">
+					There is an error in rendering TODO item
+				</p>
+				<div class="error__btn">
+					<button>OK</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="copy">
+			&copy;Copyright by <span>Alimelon</span>
+		</div>
+	</body>
+</html>

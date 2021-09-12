@@ -1,0 +1,99 @@
+.addition-container {
+	transition: all 0.5s;
+}
+
+.addition {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 15;
+	background-color: #fff;
+	padding: 2rem 5rem;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 1rem;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.329);
+}
+
+.addition__header {
+	border-bottom: 1px solid black;
+	display: flex;
+	align-items: center;
+}
+
+.addition__img {
+	display: block;
+	margin: 0 1.5rem;
+	width: 5rem;
+}
+
+.addition__title {
+	text-transform: uppercase;
+	font-size: 3rem;
+}
+
+.addition__row {
+	display: flex;
+	align-items: center;
+	margin: 3rem 0;
+}
+
+.addition__row .inp {
+	outline: none;
+	padding: 0.5rem 1.5rem;
+	font-size: 1.6rem;
+	border: 1px solid rgba(0, 0, 0, 0.315);
+	border-radius: 1rem;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.281);
+	width: 25rem;
+}
+
+.addition__row textarea.inp {
+	resize: none;
+	height: 8rem;
+	overflow: auto;
+}
+
+.addition__row .label {
+	flex-basis: 50%;
+	text-align: center;
+	align-self: flex-start;
+	font-size: 2rem;
+}
+
+select.inp option {
+	color: #777;
+	line-height: 1rem;
+}
+
+.inp#time,
+.inp#weekday {
+	width: 12.5rem;
+	text-transform: uppercase;
+	padding: 0.5rem;
+}
+
+.addition__btns {
+	text-align: right;
+	margin: 2rem;
+}
+
+.addition__btn {
+	font-size: 2rem;
+	padding: 0.5rem 2.5rem;
+	border-radius: 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.322);
+	cursor: pointer;
+	transition: all 0.3s;
+	margin-right: 2rem;
+}
+
+.addition__btn.btn-confirm {
+	background-color: rgba(75, 255, 90, 0.698);
+}
+
+.addition__btn.btn-cancel {
+	background-color: rgba(255, 47, 47, 0.698);
+}

@@ -1,0 +1,33 @@
+@media only screen and (max-width: 800px) {
+	html {
+		font-size: 50%;
+	}
+
+	body {
+		padding: 0 2rem;
+	}
+
+	.search-container {
+		flex-basis: 100%;
+		text-align: center;
+		margin: 5rem 0;
+	}
+	.features {
+		flex-wrap: wrap;
+	}
+
+	.addition {
+		width: 100%;
+	}
+
+	.item-container {
+		width: 100%;
+		margin: 4rem auto;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.item {
+		font-size: 1rem;
+	}
+}
