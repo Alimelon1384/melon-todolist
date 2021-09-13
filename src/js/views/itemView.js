@@ -15,6 +15,7 @@ class ItemView {
 		const markup = `
 		<div class="spinner-container">
 			<img
+				crossorigin="anonymous"
 				class="spinner"
 				src="https://img.icons8.com/fluency/48/000000/loading.png"
 			/>;
@@ -28,6 +29,7 @@ class ItemView {
 		const markup = `
 		<div class="item-error">
 			<img
+				crossorigin="anonymous"
 				src="https://img.icons8.com/doodle/48/000000/error.png"
 				alt="error"
 			/>
@@ -110,12 +112,14 @@ class ItemView {
 			<div class="item__due-time">${item.weekday}, ${item.time}</div>
 			<div class="item__icons">
 				<img
+					crossorigin="anonymous"
 					title="remove item"
 					class="item__icon icon-trash"
 					src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-trash-interface-kiranshastry-lineal-kiranshastry.png"
 				/>
 
 				<img
+					crossorigin="anonymous"
 					title="edit item"
 					class="item__icon icon-edit"
 					src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-edit-interface-kiranshastry-lineal-kiranshastry.png"

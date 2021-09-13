@@ -4,6 +4,9 @@ import ErrorView from "./views/errorView.js";
 import AdditionView from "./views/additionView.js";
 import FeaturesView from "./views/featuresView.js";
 
+import "core-js/stable";
+import "regenerator-runtime/runtime";
+
 const controlAddition = function (data, edit) {
 	// transfer to todo object
 	const newItem = model.createTODO(data);
