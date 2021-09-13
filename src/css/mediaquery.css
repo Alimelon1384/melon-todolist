@@ -1,4 +1,4 @@
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 	html {
 		font-size: 50%;
 	}
@@ -16,7 +16,8 @@
 		flex-wrap: wrap;
 	}
 
-	.addition {
+	.addition,
+	.error {
 		width: 100%;
 	}
 
@@ -27,7 +28,26 @@
 }
 
 @media only screen and (max-width: 480px) {
+	html {
+		font-size: 50%;
+	}
+	.header__title--main {
+		font-size: 3rem;
+		letter-spacing: 0.5rem;
+	}
+	.header__title--sub {
+		margin-top: 3rem;
+		letter-spacing: 0.2rem;
+		font-size: 1.8rem;
+	}
+	.header__title--sub span {
+		display: block;
+		height: 1rem;
+	}
+	.features {
+		margin-top: 0;
+	}
 	.item {
-		font-size: 1rem;
+		font-size: 0.9rem;
 	}
 }
