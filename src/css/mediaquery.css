@@ -10,7 +10,7 @@
 	.search-container {
 		flex-basis: 100%;
 		text-align: center;
-		margin: 5rem 0;
+		margin: 3rem 0;
 	}
 	.features {
 		flex-wrap: wrap;
@@ -23,7 +23,7 @@
 
 	.item-container {
 		width: 100%;
-		margin: 4rem auto;
+		margin: 1rem auto;
 	}
 }
 
@@ -32,11 +32,13 @@
 		font-size: 50%;
 	}
 	.header__title--main {
+		padding-top: 5rem;
+
 		font-size: 3rem;
 		letter-spacing: 0.5rem;
 	}
 	.header__title--sub {
-		margin-top: 3rem;
+		margin-top: 1rem;
 		letter-spacing: 0.2rem;
 		font-size: 1.8rem;
 	}

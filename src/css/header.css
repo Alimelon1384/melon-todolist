@@ -23,3 +23,17 @@
 	animation: bounceInRight 1s;
 	backface-visibility: hidden;
 }
+
+.favicon {
+	text-align: left;
+	height: 5rem;
+	position: absolute;
+	left: 2rem;
+	top: 2rem;
+	opacity: 0.5;
+	z-index: -1;
+}
+.favicon img {
+	display: block;
+	height: 100%;
+}
