@@ -27,7 +27,7 @@ body {
 	padding: 2% 10%;
 	background-image: url("../img/bg2.jpg");
 	background-size: cover;
-	background-position: bottom;
+	background-position: top;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	margin: 0 auto;

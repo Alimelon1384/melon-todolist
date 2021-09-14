@@ -1,4 +1,5 @@
 .prettierrc
-node_modules
+.prettierignore
+/node_modules
 .parcel-cache
-dist
+/dist
